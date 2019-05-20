@@ -50,7 +50,7 @@ $(document).ready(() => {
     $('.slide-info').removeClass('slide-active');
     $('.slide-info div').removeClass('block');
   });
-  animateColor();
+  // animateColor();
 });
 
 function animateColor() {

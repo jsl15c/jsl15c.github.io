@@ -48,6 +48,11 @@ a {
   }
 }
 
+.gradient-box {
+  background-image:-webkit-linear-gradient(0deg, #8100FF 0%, rgb(0, 178, 254) 100%);
+  background-image:linear-gradient(0deg, #8100FF 0%, rgb(0, 178, 254) 100%);
+}
+
 .container-padding {
   padding:20px;
   overflow: hidden;
@@ -214,7 +219,6 @@ a {
       }
       .projects-info{
         .pt-container {
-          max-width: 61vw;
           margin: auto;
           justify-content: center;
           align-content: flex-start;
