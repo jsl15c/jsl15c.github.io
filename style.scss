@@ -117,13 +117,12 @@ a {
     justify-content: center;
     text-align: center;
     padding:50px;
-
+    > * {
+      margin:0;
+      margin-bottom:20px;
+    }
     .personal-links {
       height:auto;
-      -webkit-margin-before: 0.83em;
-      -webkit-margin-after: 0.83em;
-      -webkit-margin-start: 0px;
-      -webkit-margin-end: 0px;
       a {
         color:#000;
         font-size: 1.5em;
