@@ -48,6 +48,11 @@ a {
   }
 }
 
+.gradient-box {
+  background-image:-webkit-linear-gradient(0deg, #8100FF 0%, rgb(0, 178, 254) 100%);
+  background-image:linear-gradient(0deg, #8100FF 0%, rgb(0, 178, 254) 100%);
+}
+
 .container-padding {
   padding:20px;
   overflow: hidden;
@@ -112,13 +117,13 @@ a {
     justify-content: center;
     text-align: center;
     padding:50px;
-
+    > * {
+      margin:0;
+      margin-bottom:20px;
+    }
     .personal-links {
       height:auto;
-      -webkit-margin-before: 0.83em;
-      -webkit-margin-after: 0.83em;
-      -webkit-margin-start: 0px;
-      -webkit-margin-end: 0px;
+      margin:0;
       a {
         color:#000;
         font-size: 1.5em;
@@ -214,7 +219,6 @@ a {
       }
       .projects-info{
         .pt-container {
-          max-width: 61vw;
           margin: auto;
           justify-content: center;
           align-content: flex-start;
@@ -224,6 +228,7 @@ a {
             margin: 10px;
             padding: 20px;
             border:1px solid #000;
+            overflow:auto;
             h3 {
               margin-top:0;
             }
@@ -232,7 +237,7 @@ a {
       }
       .skill-info {
         .sd-container {
-          align-content:flex-start;
+          justify-content: center;
           .skill-detail {
             height:auto;
             max-width:200px;
