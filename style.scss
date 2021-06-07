@@ -234,6 +234,10 @@ a {
 
             &--blank {
               background:#000;
+              display: block;
+              @media screen and (min-width: 1024px) {
+                display: none;
+              }
             }
 
             h3 {

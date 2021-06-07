@@ -236,6 +236,13 @@ a {
 
 .container-padding .menu .projects-info .pt-container .pt-details--blank {
   background: #000;
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-padding .menu .projects-info .pt-container .pt-details--blank {
+    display: none;
+  }
 }
 
 .container-padding .menu .projects-info .pt-container .pt-details h3 {
