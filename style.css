@@ -216,6 +216,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: auto;
 }
 
 .container-padding .menu .projects-info .pt-container {
@@ -225,12 +226,16 @@ a {
 }
 
 .container-padding .menu .projects-info .pt-container .pt-details {
-  height: 215px;
+  height: auto;
   max-width: 200px;
   margin: 10px;
   padding: 20px;
   border: 1px solid #000;
   overflow: auto;
+}
+
+.container-padding .menu .projects-info .pt-container .pt-details--blank {
+  background: #000;
 }
 
 .container-padding .menu .projects-info .pt-container .pt-details h3 {
