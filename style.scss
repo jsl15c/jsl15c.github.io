@@ -148,6 +148,14 @@ a {
     font-family: monospace;
     font-size: 1.5em;
     height: auto;
+
+    .time {
+      width: 120px;
+      margin: 0 auto;
+      background: #000;
+      color: #fff;
+      padding: 10px 15px;
+    }
   }
 
   .menu {

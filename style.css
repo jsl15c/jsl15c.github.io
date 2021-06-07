@@ -143,6 +143,14 @@ a {
   height: auto;
 }
 
+.container-padding .fun-data .time {
+  width: 120px;
+  margin: 0 auto;
+  background: #000;
+  color: #fff;
+  padding: 10px 15px;
+}
+
 .container-padding .menu {
   display: none;
   top: 20px;
