@@ -51,6 +51,7 @@ $(document).ready(() => {
     $('.slide-info div').removeClass('block');
   });
   // animateColor();
+  get
 });
 
 function animateColor() {
@@ -95,5 +96,26 @@ function animateColor() {
       colorCounter++;
     }
     cssFunction(angleCounter, colorCounter, percentCounter);
-}, 10);
+  }, 10);
 }
+
+function formatAMPM(date) {
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let ampm = hours >= 12 ? 'pm' : 'am';
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  let strTime; 
+  if (date.getSeconds() % 2 == 0) {
+    strTime = hours + ':' + minutes + ' ' + ampm;
+  } else {
+    strTime = hours + ' ' + minutes + ' ' + ampm;
+  }
+  $('.fun-data .time').text(strTime)
+}
+
+formatAMPM(new Date());
+setInterval(function () {
+  formatAMPM(new Date());
+}, 1000)
